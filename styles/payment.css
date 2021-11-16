@@ -1,3 +1,8 @@
+#content{
+    margin-top: 90px;
+    padding-bottom: 90px;
+}
+
 .payment-hotel-details img{
     height: 500px;
     width: 500px;
@@ -18,7 +23,11 @@
     margin: 2%;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 1% 2%;
-    
+    padding: 1% 2%;   
+}
+
+.pay-now a{
+    text-decoration: none;
+    color: black;
 }
 

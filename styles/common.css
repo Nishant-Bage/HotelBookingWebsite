@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body, .container{
@@ -7,26 +9,73 @@ body, .container{
     height: 100vh;
 }
 
-body{
-    background-color: #e0e0e0;
-}
+/* #content{
+    margin-top: 80px;
+    padding-bottom: 80px;
+} */
 
 header{
     background-color:  rosybrown;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-footer{
-    background-color:  rosybrown;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-
 
 nav img{
     height: 60px;
     width: 60px;
 }
 
+nav a{
+    margin-right: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color:  rosybrown;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.social-icons{
+    margin-right: 1%;
+    
+
+}
+
+.contact-us{
+    margin-left: 1%;
+    
+}
+
+.contact-us a{
+    text-decoration: none;
+    color: black;
+}
+
 .social-icons img{
     height: 20px;
     width: 22px;
 }
+
+.copyright{
+    font-size: 10px;
+    padding-top: 35px;
+    margin-bottom: 0.5%;
+}
+

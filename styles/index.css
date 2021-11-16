@@ -12,6 +12,22 @@
     background-repeat: no-repeat;
 }
 
+.input-bar{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-bar input{
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    width: 30%;
+}
+
 .slider-images{
     display: flex;
     justify-content: space-between;
@@ -25,5 +41,15 @@
 
 .city-image-card img{
     border-radius: 15%;
+}
+
+.view-more {
+    text-align: center;
+    padding: 1% 0 7%;
+}
+
+.view-more a{
+    color: black;
+    text-decoration: none;
 }
 

@@ -7,6 +7,10 @@
     <title>List</title>
     <link rel="stylesheet" href="./styles/list.css" />
     <link rel="stylesheet" href="./styles/common.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -31,17 +35,19 @@
           </ul>
         </section>
         <section class="hotel-list" id="hotel-list">
-          <a href="detail.html"
-            ><article>
-              <img
-                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                alt="raddison"
-              />
-              <h3>Radisson Blu Hotel</h3>
-              <p>5 Star</p>
-              <p>New Delhi</p>
-            </article></a
-          >
+          <article>
+            <a href="detail.html"
+              ><div class="first-link">
+                <img
+                  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                  alt="raddison"
+                />
+                <h3>Radisson Blu Hotel</h3>
+                <p>5 Star</p>
+                <p>New Delhi</p>
+              </div></a
+            >
+          </article>
           <article>
             <img
               src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
@@ -71,33 +77,35 @@
         </section>
       </div>
       <footer>
-        <section class="contact-us">
-          <a href="contact.html">Contact Us</a>
-        </section>
-        <section class="social-icons">
-          <a target="_blank" href="https://www.facebook.com"
-            ><img
-              height="20px"
-              width="22px"
-              src="./assests/images/facebook.png"
-              alt="facebook"
-          /></a>
-          <a target="_blank" href="https://www.instagram.com/"
-            ><img
-              height="20px"
-              width="22px"
-              src="./assests/images/instagram.png"
-              alt="instagram"
-          /></a>
-          <a target="_blank" href="https://twitter.com/"
-            ><img
-              height="20px"
-              width="22px"
-              src="./assests/images/twitter.png"
-              alt="twitter"
-          /></a>
-        </section>
-        <section class="copyright">&copy 2020 ROOM SEARCH PVT. LTD.</section>
+        <div class="footer-flex">
+          <section class="contact-us">
+            <a href="contact.html">Contact Us</a>
+          </section>
+          <section class="copyright">&copy 2020 ROOM SEARCH PVT. LTD.</section>
+          <section class="social-icons">
+            <a target="_blank" href="https://www.facebook.com"
+              ><img
+                height="20px"
+                width="22px"
+                src="./assests/images/facebook.png"
+                alt="facebook"
+            /></a>
+            <a target="_blank" href="https://www.instagram.com/"
+              ><img
+                height="20px"
+                width="22px"
+                src="./assests/images/instagram.png"
+                alt="instagram"
+            /></a>
+            <a target="_blank" href="https://twitter.com/"
+              ><img
+                height="20px"
+                width="22px"
+                src="./assests/images/twitter.png"
+                alt="twitter"
+            /></a>
+          </section>
+        </div>
       </footer>
     </div>
   </body>
