@@ -7,6 +7,10 @@
     <title>Detail</title>
     <link rel="stylesheet" href="./styles/detail.css" />
     <link rel="stylesheet" href="./styles/common.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -24,79 +28,94 @@
         </nav>
       </header>
       <div id="content">
-        <section class="hotel-image">
-          <img
-            src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-            alt="raddison"
-          />
-        </section>
-        <section class="hotel-discription">
-          <article class="book-now-form">
-            <form action="payment.html">
-              <label for="adults">Adults:</label>
-              <input
-                type="number"
-                name="adults"
-                id="number-of-adults"
-                min="1"
-                required
-              /><br />
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                name="name"
-                id="for-name"
-                required
-                autocomplete="off"
-              /><br />
-              <label for="from-date">From Date:</label>
-              <input
-                type="date"
-                name="from-date"
-                id="from-date-input"
-                required
-              /><br />
-              <label for="to-date">To Date:</label>
-              <input
-                type="date"
-                name="to-date"
-                id="to-date-input"
-                required
-              /><br />
-              <label for="total">Total</label>
-              <input type="text" name="total" id="input-total" readonly /><br />
-              <input type="submit" value="Book Now" />
-            </form>
-          </article>
-          <div class="hotel-details">
-            <article class="heading">
-              <h2>Radisson Blu Hotel</h2>
-            </article>
-            <article class="rating">
-              <p>RATING</p>
-              <p>5 Star</p>
-            </article>
-            <article class="amenites">
-              <p>AMENITIES</p>
-              <ul>
-                <li>Room Service</li>
-                <li>Restaurant</li>
-                <li>Business center</li>
-                <li>Fitness center</li>
-                <li>Pool</li>
-              </ul>
-            </article>
-            <article class="description">
-              <h5>DESCRIPTION</h5>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi,
-                harum optio. Quod illo suscipit tempora mollitia illum optio
-                minus, rerum natus totam nulla amet ipsum provident quam. Harum,
-                hic cupiditate.
-              </p>
-            </article>
+        <section class="hotel-image-and-form">
+          <div class="hotel-image">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+              alt="raddison"
+            />
+          </div>
+          <div class="hotel-form">
+            
+              <form action="payment.html">
+                <section class="adults-input">
+                  <label for="adults">Adults:</label>
+                  <input
+                    type="number"
+                    name="adults"
+                    id="number-of-adults"
+                    min="1"
+                    required
+                  />
+                </section>
+                <section class="name-input">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="for-name"
+                    required
+                    autocomplete="off"
+                  />
+                </section>
+                <section class="from-date-input">
+                  <label for="from-date">From Date:</label>
+                  <input
+                    type="date"
+                    name="from-date"
+                    id="from-date-input"
+                    required
+                  />
+                </section>
+                <section class="to-date-input">
+                  <label for="to-date">To Date:</label>
+                  <input
+                    type="date"
+                    name="to-date"
+                    id="to-date-input"
+                    required
+                  />
+                </section>
+                <section class="total-input">
+                  <label for="total">Total:</label>
+                  <input type="text" name="total" id="input-total" readonly />
+                </section>
+                <section class="submit-button">
+                  <input type="submit" value="Book Now" />
+                </section>
+              </form>
+            
           </div>
         </section>
+
+        <div class="hotel-details">
+          <article class="heading">
+            <h2>Radisson Blu Hotel</h2>
+          </article>
+          <article class="rating">
+            <p>RATING</p>
+            <p>5 Star</p>
+          </article>
+          <article class="amenities">
+            <p>AMENITIES</p>
+            <ul>
+              <li>Room Service</li>
+              <li>Restaurant</li>
+              <li>Business center</li>
+              <li>Fitness center</li>
+              <li>Pool</li>
+            </ul>
+          </article>
+          <article class="description">
+            <h5>DESCRIPTION</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi,
+              harum optio. Quod illo suscipit tempora mollitia illum optio
+              minus, rerum natus totam nulla amet ipsum provident quam. Harum,
+              hic cupiditate.
+            </p>
+          </article>
+        </div>
       </div>
       <footer>
         <div class="footer-flex">

@@ -28,12 +28,13 @@ nav{
 }
 
 nav img{
+    margin-left: 1%;
     height: 60px;
     width: 60px;
 }
 
 nav a{
-    margin-right: 1%;
+    margin-right: 2%;
     text-decoration: none;
     color: black;
 }
@@ -49,17 +50,17 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    padding: 15px 0;
 }
 
 .social-icons{
-    margin-right: 1%;
+    margin-right: 2%;
     
 
 }
 
 .contact-us{
-    margin-left: 1%;
+    margin-left: 2%;
     
 }
 
@@ -75,7 +76,5 @@ footer{
 
 .copyright{
     font-size: 10px;
-    padding-top: 35px;
-    margin-bottom: 0.5%;
 }
 
