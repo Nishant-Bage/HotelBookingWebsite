@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    /* z-index: -1; */
 }
 
 .city-image-card{
@@ -42,6 +42,7 @@
     margin: 4%;
     border-radius: 15%;
     box-shadow: 10px 10px 10px grey;
+    
 }
 
 .image-overlay{
@@ -78,6 +79,39 @@
 .view-more a{
     color: black;
     text-decoration: none;
+}
+
+/* responsive css  */
+
+@media only screen and (max-width: 576px) {
+    .slider-images {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .input-bar input{
+        width: 50%;
+    }
+
+    .city-image-card{
+        margin: 6%;
+    }
+
+    #content{
+        /* margin-top: 80px; */
+        padding-bottom: 80px;
+    }
+  }
+
+@media only  screen and (min-width:576px) and (max-width:768px) {
+    .slider-images {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .city-image-card{
+        margin: 4%;
+    }
 }
 
 

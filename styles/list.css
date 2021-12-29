@@ -51,6 +51,10 @@ article a{
     text-decoration: none;
     color: black;
 }
+article a:hover{
+    /* text-decoration: none; */
+    color: black;
+}
 
 .flex-wrap{
     display: flex;
@@ -60,3 +64,71 @@ article a{
     margin-left: 3%;
 }
 
+/* responsive css */
+
+@media only screen and  (max-width: 576px) {
+    #pills-tab{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .hotel-list{
+        display: block;
+        
+    }
+
+    .flex-wrap{
+        display: block;
+    }
+
+    .hotel-list article{
+        margin: 2% 4%;
+        height: auto;
+        width: 90%;
+        background-color: lightgray;
+    }
+    
+    .hotel-list img{
+        height: 200px;
+        width: 100%;
+    }
+
+    .map img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width: 768px) {
+    
+    #pills-tab{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .hotel-list{
+        display: block;
+        
+    }
+
+    .hotel-list article{
+        margin: 4% 4%;
+        height: auto;
+        width: 90%;
+        background-color: lightgray;
+    }
+    
+    .hotel-list img{
+        height: 200px;
+        /* width: 100%; */
+    }
+
+    .map img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .name-rating{
+        padding: 2% 0;
+    }
+}

@@ -22,6 +22,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/c00e571593.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="main-container">
@@ -102,61 +106,107 @@
       <div id="content">
         <section class="hotel-image-and-form">
           <div class="hotel-image">
-            <img
-              src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-              alt="raddison"
-            />
+            <div
+              id="carouselExampleControls"
+              class="carousel "
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img 
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                    class="d-block w-100"
+                    alt="raddison"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg"
+                    class="d-block w-100"
+                    alt="slider"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg"
+                    class="d-block w-100"
+                    alt="slider"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  style="color: rosybrown"
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  style="color: rosybrown"
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
           <div class="hotel-form">
-            
-              <form action="payment.html">
-                <section class="adults-input">
-                  <label for="adults">Adults:</label>
-                  <input
-                    type="number"
-                    name="adults"
-                    id="number-of-adults"
-                    min="1"
-                    required
-                  />
-                </section>
-                <section class="name-input">
-                  <label for="name">Name:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="for-name"
-                    required
-                    autocomplete="off"
-                  />
-                </section>
-                <section class="from-date-input">
-                  <label for="from-date">From Date:</label>
-                  <input
-                    type="date"
-                    name="from-date"
-                    id="from-date-input"
-                    required
-                  />
-                </section>
-                <section class="to-date-input">
-                  <label for="to-date">To Date:</label>
-                  <input
-                    type="date"
-                    name="to-date"
-                    id="to-date-input"
-                    required
-                  />
-                </section>
-                <section class="total-input">
-                  <label for="total">Total:</label>
-                  <input type="text" name="total" id="input-total" readonly />
-                </section>
-                <section class="submit-button">
-                  <button type="submit" class="btn btn-outline-success">Book Now</button>
-                </section>
-              </form>
-            
+            <form action="payment.html">
+              <section class="adults-input">
+                <label for="adults">Adults:</label>
+                <input
+                  type="number"
+                  name="adults"
+                  id="number-of-adults"
+                  min="1"
+                  required
+                />
+              </section>
+              <section class="name-input">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="for-name"
+                  required
+                  autocomplete="off"
+                />
+              </section>
+              <section class="from-date-input">
+                <label for="from-date">From Date:</label>
+                <input
+                  type="date"
+                  name="from-date"
+                  id="from-date-input"
+                  required
+                />
+              </section>
+              <section class="to-date-input">
+                <label for="to-date">To Date:</label>
+                <input type="date" name="to-date" id="to-date-input" required />
+              </section>
+              <section class="total-input">
+                <label for="total">Total:</label>
+                <input type="text" name="total" id="input-total" readonly />
+              </section>
+              <section class="submit-button">
+                <button type="submit" class="btn btn-outline-success">
+                  Book Now
+                </button>
+              </section>
+            </form>
           </div>
         </section>
 
@@ -166,7 +216,11 @@
           </article>
           <article class="rating">
             <p>RATING</p>
-            <p>5 Star</p>
+            <p style="color: orange">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </p>
           </article>
           <article class="amenities">
             <p>AMENITIES</p>
