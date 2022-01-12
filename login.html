@@ -1,36 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html>
+
+<head>
     <title>Login</title>
-  </head>
-  <body>
-    <div class="container">
-      <form method="get" action="index.html">
-        <label for="user-name">Username:</label>
-        <input
-          type="text"
-          name="user-name"
-          id="username-input"
-          placeholder="Enter Username"
-          autocomplete="off"
-          required
-        />
-        <br />
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          name="password"
-          id="password-input"
-          placeholder="Enter Password"
-          autocomplete="off"
-          required
-        />
-        <br />
-        <input type="submit" value="Login">
-      </form>
+</head>
+
+<body>
+    <div class="login-form">
+        <form action="index.html" method="GET" target="_self">
+            <label for="name">Username:</label>
+            <input type="text" id="form-name" name="name" placeholder="Enter Username" required />
+
+            <br />
+
+            <label for="password">Password:</label>
+            <input type="password" id="form-password" name="password" placeholder="Enter Password" required />
+
+            <br />
+
+            <input type="submit" value="Login" />
+        </form>
     </div>
-  </body>
+</body>
+
 </html>

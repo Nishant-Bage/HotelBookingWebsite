@@ -1,260 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/common.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <div id="loader"></div>
     <div class="main-container">
-      <header>
-        <nav>
-          <img
-            height="100px"
-            width="150px"
-            src="./assests/images/logo.png"
-            alt="logo"
-          />
-          <div class="bootstrap-modal">
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-light btn-sm"
-              data-bs-toggle="modal"
-              data-bs-target="#login"
-            >
-              LOGIN
-            </button>
+        <!-- Header -->
+        <header class="header-footer" id="header"></header>
 
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="login"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Please Login
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form id="login-form" method="get" action="index.html">
-                      <label for="user-name">Username:</label>
-                      <input
-                        type="text"
-                        name="user-name"
-                        id="username-input"
-                        placeholder="Enter Username"
-                        autocomplete="off"
-                        required
-                      />
-                      <br />
-                      <label for="password">Password:</label>
-                      <input
-                        type="password"
-                        name="password"
-                        id="password-input"
-                        placeholder="Enter Password"
-                        autocomplete="off"
-                        required
-                      />
+        <!-- Content -->
+        <div id="index-container">
+            <div id="banner">
+                <!--Search Bar-->
+                <div id="search-bar">
+                    <form autocomplete="off">
+                        <input id="search-input" type="text" placeholder="City" />
                     </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Login</button>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </nav>
-      </header>
-      <div id="content">
-        <section class="search-bar">
-          <div class="input-bar">
-            <input
-              type="search"
-              name=""
-              id="search-bar"
-              placeholder="City"
-              autocomplete="off"
-            />
-          </div>
-        </section>
-        <section class="slider-images">
-          <article class="city-image-card">
-            <a href="list.html"
-              ><img
-                height="300px"
-                width="300px"
-                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
-                alt="delhi"
-              />
-              <div class="image-overlay">
-                <div class="tittle">Delhi</div>
-              </div>
-            </a>
-          </article>
-          <article class="city-image-card">
-            <img
-              height="300px"
-              width="300px"
-              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
-              alt="goa"
-            />
-            <div class="image-overlay">
-              <div class="tittle">Goa</div>
-            </div>
-          </article>
-          <article class="city-image-card">
-            <img
-              height="300px"
-              width="300px"
-              src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
-              alt="hyderabad"
-            />
-            <div class="image-overlay">
-              <div class="tittle">Hyderabad</div>
-            </div>
-          </article>
-          <article class="city-image-card">
-            <img
-              height="300px"
-              width="300px"
-              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
-              alt="kolkata"
-            />
-            <div class="image-overlay">
-              <div class="tittle">Kolkata</div>
-            </div>
-          </article>
-        </section>
-        <section class="view-more">
-          <a
-            href="#"
-            class="btn btn-secondary active"
-            role="button"
-            aria-pressed="true"
-            >View more</a
-          >
-        </section>
-      </div>
-      <footer>
-        <div class="footer-flex">
-          <section class="contact-us">
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-primary btn-sm"
-              data-bs-toggle="modal"
-              data-bs-target="#contact"
-            >
-              Contact Us
-            </button>
 
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="contact"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Get in touch
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="contact-form">
-                      <p>Thank you for reaching out!!!</p>
-                      <p>
-                        Please enter your email and we will get back to you.
-                      </p>
-                      <form method="get" action="index.html">
-                        <label for="email">Email:</label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email-input"
-                          placeholder="Enter your email id"
-                          required
-                          autocomplete="off"
-                        />
-                      </form>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">
-                      Submit
-                    </button>
-                  </div>
+            <!--City Cards-->
+            <div class="city-cards">
+                <div class="city-card-and-name-inner">
+                    <a href="list.html?city=Delhi">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                            class="city-image">
+                        <div class='overlay'><span>Delhi</span></div>
+                    </a>
                 </div>
-              </div>
+
+                <div class="city-card-and-name-inner">
+                    <a href="list.html?city=Goa">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
+                            class="city-image">
+                        <div class='overlay'><span>Goa</span></div>
+                    </a>
+                </div>
+
+                <div class="city-card-and-name-inner">
+                    <a href="list.html?city=Hyderabad">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
+                            class="city-image">
+                        <div class='overlay'><span>Hyderabad</span></div>
+                    </a>
+                </div>
+
+                <div class="city-card-and-name-inner">
+                    <a href="list.html?city=Kolkata">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+                            class="city-image">
+                        <div class='overlay'><span>Kolkata</span></div>
+                    </a>
+                </div>
             </div>
-          </section>
-          <section class="copyright">&copy 2020 ROOM SEARCH PVT. LTD.</section>
-          <section class="social-icons">
-            <a target="_blank" href="https://www.facebook.com"
-              ><img
-                height="20px"
-                width="22px"
-                src="./assests/images/facebook.png"
-                alt="facebook"
-            /></a>
-            <a target="_blank" href="https://www.instagram.com/"
-              ><img
-                height="20px"
-                width="22px"
-                src="./assests/images/instagram.png"
-                alt="instagram"
-            /></a>
-            <a target="_blank" href="https://twitter.com/"
-              ><img
-                height="20px"
-                width="22px"
-                src="./assests/images/twitter.png"
-                alt="twitter"
-            /></a>
-          </section>
+
+            <div id="view-more-city-cards">
+                <div class="city-cards">
+                    <div class="city-card-and-name-inner">
+                        <a href="list.html?city=Chennai">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg"
+                                class="city-image">
+                            <div class='overlay'><span>Chennai</span></div>
+                        </a>
+                    </div>
+
+                    <div class="city-card-and-name-inner">
+                        <a href="list.html?city=Agra">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"
+                                class="city-image">
+                            <div class='overlay'><span>Agra</span></div>
+                        </a>
+                    </div>
+
+                    <div class="city-card-and-name-inner">
+                        <a href="list.html?city=Jaipur">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg"
+                                class="city-image">
+                            <div class='overlay'><span>Jaipur</span></div>
+                        </a>
+                    </div>
+
+                    <div class="city-card-and-name-inner">
+                        <a href="list.html?city=Bengaluru">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"
+                                class="city-image">
+                            <div class='overlay'><span>Bengaluru</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a id="view-more">
+                <button id="view-more-button" type="button" class="btn btn-secondary" onclick="viewMore()">View
+                    More</button>
+            </a>
         </div>
-      </footer>
+
+        <!-- Footer-->
+        <footer class="header-footer" id="footer"></footer>
     </div>
-  </body>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
 </html>

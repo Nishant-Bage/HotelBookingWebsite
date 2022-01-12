@@ -1,134 +1,84 @@
 
-#content{
-    margin-top: 80px;
-    padding-bottom: 80px;
-}
-
-#pills-tab{
-    width: 20%;
-    margin: 0 auto;
-}
-
-.view ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.view a{
-    padding: 0 2%;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.hotel-list{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.hotel-list img{
+.hotel-image-small {
     height: 200px;
     width: 250px;
 }
-
-.hotel-list article{
-    margin: 2% 4%;
-    height: 200px;
+.hotel{
+    margin: 4% 5% 0% 5%; 
+    background-color: lightgrey;
     width: 40%;
-    background-color: lightgray;
+    float: left;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    max-height: 200px;
 }
-
-.hotel-list article:hover{
+.hotel:hover {
     background-color: rosybrown;
 }
-
-/* .map{
-    display: none;
-} */
-
-article a{
-    text-decoration: none;
-    color: black;
+#list-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
-article a:hover{
-    /* text-decoration: none; */
-    color: black;
+#list-map {
+    position: relative;
+    top: 0%;
+}
+#select-list {
+    position: absolute;
+    left: 42%;
+    font-weight: bold;
+}
+#select-map {
+    position: absolute;
+    left: 50%;
+    font-weight: bold;
+}
+#pills-tab {
+    justify-content: center;
+}
+#map {
+    height: 82vh;
+    margin-top: 2%;
 }
 
-.flex-wrap{
-    display: flex;
-}
-
-.name-rating{
-    margin-left: 3%;
-}
-
-/* responsive css */
-
-@media only screen and  (max-width: 576px) {
-    #pills-tab{
-        width: 60%;
-        margin: 0 auto;
+@media screen and (max-width: 576px) {  
+    #list-container {
+        margin-bottom: 150%;
     }
 
-    .hotel-list{
-        display: block;
-        
+    #pills-tab {
+        padding-top: 15%;
     }
 
-    .flex-wrap{
-        display: block;
-    }
-
-    .hotel-list article{
-        margin: 2% 4%;
-        height: auto;
+    .hotel{
         width: 90%;
-        background-color: lightgray;
+        flex-direction: column;
     }
-    
-    .hotel-list img{
-        height: 200px;
+
+    .hotel-image-small {
         width: 100%;
     }
 
-    .map img{
-        height: 100%;
+    #map-view > img {
         width: 100%;
     }
 }
-
-@media only screen and (min-width:576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #pills-tab {
+        padding-top: 5%;
+    }
     
-    #pills-tab{
-        width: 30%;
-        margin: 0 auto;
-    }
-
-    .hotel-list{
-        display: block;
-        
-    }
-
-    .hotel-list article{
-        margin: 4% 4%;
-        height: auto;
+    .hotel{
         width: 90%;
-        background-color: lightgray;
-    }
-    
-    .hotel-list img{
-        height: 200px;
-        /* width: 100%; */
+        flex-direction: column;
     }
 
-    .map img{
-        height: 100%;
+    #map-view > img {
         width: 100%;
     }
-
-    .name-rating{
-        padding: 2% 0;
-    }
 }
+
